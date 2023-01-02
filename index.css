@@ -1,0 +1,138 @@
+body {
+  background-image: url("https://i.pinimg.com/originals/fa/6c/77/fa6c771b1b52a2f767359ace05c266ee.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.professional {
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  color: maroon;
+  /* Setup */
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: maroon;
+}
+
+a::after {
+    text-decoration: none;
+    color: maroon;
+}
+
+.ssoldier1 {
+  width: 50px;
+  height: 50px;
+
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
+  margin-left: 700px;
+}
+
+.ssoldier1 img {
+    height: 391px;
+}
+
+.ssoldier2 img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    height: 391px;
+}
+
+.ssoldier2 {
+  width: 50px;
+  height: 50px;
+
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
+  margin-left: 400px;
+}
+
+.ssoldier3 img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    height: 391px;
+}
+
+.ssoldier3 {
+  width: 50px;
+  height: 50px;
+
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
+}
+
+.button {
+    background-color:#0c1d3b;
+  border: 3px groove maroon;
+  color: maroon;
+  cursor: pointer;
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin: 2em 0 1em;
+  padding: 0.5em 1.5em;
+  border-radius: 15px;
+  margin-left: 75px;
+}
+
+.one {
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.two {
+    margin-top: 10px;
+}
+
+.two:hover {
+    background-color: black;
+}
+
+.two:hover::after {
+    content: ": Flexibility"
+}
+
+.one:hover {
+    background-color: black;
+}
+
+.one:hover::after {
+    content: ": Rationality"
+}
+
+.three:hover {
+    background-color: black;
+}
+
+.three:hover::after {
+    content: ": Communication";
+}
+
+.three {
+    margin-top: 10px;
+}
