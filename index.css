@@ -1,138 +1,173 @@
-body {
-  background-image: url("https://i.pinimg.com/originals/fa/6c/77/fa6c771b1b52a2f767359ace05c266ee.jpg");
-  background-size: cover;
-  height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.professional {
-  font-family: arial;
-  font-size: 24px;
-  margin: 25px;
-  width: 350px;
-  height: 200px;
-  color: maroon;
-  /* Setup */
-  position: relative;
-  border-radius: 15px;
-  cursor: pointer;
-  text-decoration: none;
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #22046b, #e14e42);
+    color: #fff;
+    position: relative;
 }
 
-a {
+.navbar {
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: maroon;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 2px;
 }
 
-a::after {
-    text-decoration: none;
-    color: maroon;
+nav ul li a:hover {
+    color: #e7c82f;
 }
 
-.ssoldier1 {
-  width: 50px;
-  height: 50px;
+.row {
+    width: 80%;
+    min-height: 85vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
-  margin-left: 700px;
 }
 
-.ssoldier1 img {
-    height: 391px;
+.col {
+    margin: 20px 0;
+    flex-basis: 50%;
+    min-width: 300px;
+    height: 100%;
+    position: relative;
 }
 
-.ssoldier2 img {
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    height: 391px;
+.text-box {
+    max-width: 400px;
+    margin-top: 100px;
 }
 
-.ssoldier2 {
-  width: 50px;
-  height: 50px;
-
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
-  margin-left: 400px;
+.text-box h5 {
+    color: #e7c82f;
 }
 
-.ssoldier3 img {
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    height: 391px;
+.text-box h1 {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 65px;
 }
 
-.ssoldier3 {
-  width: 50px;
-  height: 50px;
-
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
+.gallery-box {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
 }
 
-.button {
-    background-color:#0c1d3b;
-  border: 3px groove maroon;
-  color: maroon;
-  cursor: pointer;
-  font-size: 1.2vw;
-  font-weight: 500;
-  margin: 2em 0 1em;
-  padding: 0.5em 1.5em;
-  border-radius: 15px;
-  margin-left: 75px;
+.gallery-box img {
+    width: 100%;
+    border: 10px solid rgba(255,255,255,0.2);
+    box-sizing: border-box;
 }
 
-.one {
-    margin-top: 30px;
-    margin-left: 130px;
+.gallery-box ul {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.two {
-    margin-top: 10px;
+.gallery-box ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
 }
 
-.two:hover {
-    background-color: black;
+.gallery-box .active {
+    color: #e7c82f;
 }
 
-.two:hover::after {
-    content: ": Flexibility"
+.gallery-box ul li::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    top: 8px;
+    left: -5px;
 }
 
-.one:hover {
-    background-color: black;
+.gallery-box .active::after {
+    background: #e7c82f;
 }
 
-.one:hover::after {
-    content: ": Rationality"
+.small-icon1 {
+    width: 15px;
+    position: absolute;
+    right: 200px;
+    top: -10px;
 }
 
-.three:hover {
-    background-color: black;
+.small-icon2 {
+    width: 25px;
+    position: absolute;
+    right: 200px;
+    bottom: -100px;
 }
 
-.three:hover::after {
-    content: ": Communication";
+.small-icon3 {
+    width: 25px;
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    opacity: 0.5;
+    transform: rotate(45deg);
 }
 
-.three {
-    margin-top: 10px;
+.small-icon4 {
+    width: 250px;
+    position: absolute;
+    top: 120px;
+    left: -150px;
+    opacity: 0.4;
+}
+
+.small-icon5 {
+    width: 25px;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    opacity: 0.3;
 }
